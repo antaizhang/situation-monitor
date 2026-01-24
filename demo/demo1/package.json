@@ -1,0 +1,28 @@
+{
+  "name": "gdelt-news-aggregator",
+  "version": "1.0.0",
+  "description": "Framework-agnostic GDELT news aggregation library with 6 categories (politics, tech, finance, gov, ai, intel)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "example": "node example.js",
+    "test": "node example.js"
+  },
+  "keywords": [
+    "gdelt",
+    "news",
+    "aggregator",
+    "intelligence",
+    "politics",
+    "technology",
+    "finance"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {}
+}

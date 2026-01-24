@@ -1,0 +1,29 @@
+{
+  "name": "fed-monitor",
+  "version": "1.0.0",
+  "description": "Framework-agnostic Federal Reserve monitoring library for economic indicators and Fed news",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "example": "node example.js",
+    "test": "node example.js"
+  },
+  "keywords": [
+    "federal-reserve",
+    "fed",
+    "fred",
+    "economic-indicators",
+    "cpi",
+    "inflation",
+    "treasury",
+    "monetary-policy"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {}
+}
