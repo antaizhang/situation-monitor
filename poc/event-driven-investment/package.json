@@ -1,0 +1,26 @@
+{
+  "name": "event-driven-investment-poc",
+  "version": "1.0.0",
+  "description": "Event-Driven Stock Investment System based on Situation Monitor",
+  "main": "StockEventEngine.ts",
+  "scripts": {
+    "example": "ts-node example.ts",
+    "build": "tsc",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "stock",
+    "investment",
+    "event-driven",
+    "news-analysis",
+    "trading-signals",
+    "market-analysis"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
