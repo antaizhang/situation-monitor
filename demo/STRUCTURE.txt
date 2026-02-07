@@ -1,0 +1,88 @@
+Demo Directory Structure
+========================
+
+demo/
+├── README.md                          # Main documentation for both demos
+├── demo1/                             # GDELT News Aggregator
+│   ├── README.md                      # Full documentation
+│   ├── package.json                   # NPM package configuration
+│   ├── tsconfig.json                  # TypeScript configuration
+│   ├── index.ts                       # Main export file
+│   ├── types.ts                       # TypeScript type definitions
+│   ├── config.ts                      # Configuration (keywords, feeds, etc.)
+│   ├── api.ts                         # GDELT API integration
+│   ├── NewsAggregator.ts              # Main class (framework-agnostic)
+│   └── example.js                     # Usage examples
+│
+└── demo2/                             # Federal Reserve Monitor
+    ├── README.md                      # Full documentation
+    ├── package.json                   # NPM package configuration
+    ├── tsconfig.json                  # TypeScript configuration
+    ├── .env.example                   # Environment variable template
+    ├── index.ts                       # Main export file
+    ├── types.ts                       # TypeScript type definitions
+    ├── config.ts                      # Configuration (FRED API, RSS feeds)
+    ├── api.ts                         # FRED API + RSS integration
+    ├── FedMonitor.ts                  # Main class (framework-agnostic)
+    └── example.js                     # Usage examples
+
+Files by Type
+=============
+
+TypeScript Source Files (*.ts):
+- demo1/types.ts          - News item, category, state types
+- demo1/config.ts         - Alert keywords, regions, topics, feeds
+- demo1/api.ts            - GDELT API fetching logic
+- demo1/NewsAggregator.ts - Main aggregator class
+- demo1/index.ts          - Public API exports
+
+- demo2/types.ts          - Indicator, news item types
+- demo2/config.ts         - FRED API, RSS feed configuration
+- demo2/api.ts            - FRED + RSS fetching logic
+- demo2/FedMonitor.ts     - Main monitor class
+- demo2/index.ts          - Public API exports
+
+JavaScript Example Files (*.js):
+- demo1/example.js        - News aggregator usage examples
+- demo2/example.js        - Fed monitor usage examples
+
+Configuration Files (*.json):
+- demo1/package.json      - Dependencies, scripts, metadata
+- demo1/tsconfig.json     - TypeScript compiler options
+- demo2/package.json      - Dependencies, scripts, metadata
+- demo2/tsconfig.json     - TypeScript compiler options
+
+Documentation Files (*.md):
+- demo/README.md          - Overview of both demos
+- demo1/README.md         - GDELT News Aggregator documentation
+- demo2/README.md         - Fed Monitor documentation
+
+Other Files:
+- demo2/.env.example      - Environment variable template for FRED API key
+
+Total Files: 19
+Total Lines: ~3,500+
+
+Key Features
+============
+
+demo1 (GDELT News Aggregator):
+- Framework-agnostic news aggregation
+- 6 categories: politics, tech, finance, gov, ai, intel
+- Alert detection, region detection, topic tagging
+- Event-driven architecture
+- Zero runtime dependencies
+
+demo2 (Federal Reserve Monitor):
+- Framework-agnostic Fed data monitoring
+- Economic indicators: Fed Funds, CPI, 10Y Treasury
+- Fed news from 5 RSS feeds
+- Event-driven architecture
+- FRED API integration (free)
+
+Both modules:
+- TypeScript with full type definitions
+- Can be used with React, Vue, Angular, or vanilla JS
+- Include working examples
+- Comprehensive documentation
+- Ready for production use
